@@ -1,14 +1,14 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://management.azure.com/subscriptions?api-version=2021-01-01",
+      "RequestUri": "https://management.azure.com/subscriptions?api-version=2021-04-01",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-d8f9921bf6d2d549878d732ab1c45422-bf6fb18b48d92e4a-00",
-        "User-Agent": "azsdk-net-ResourceManager/1.1.1-alpha.20220623.1 (.NET Framework 4.8.4510.0; Microsoft Windows 10.0.19044 )",
-        "x-ms-client-request-id": "5b5181fca0925f95fab1ebad98ebc166",
+        "traceparent": "00-bd9c948f15dbc42146a5332029ffe56d-79c61fc65e2688ca-00",
+        "User-Agent": "azsdk-net-ResourceManager/1.3.0-alpha.20220715.1 (.NET 6.0.7; Microsoft Windows 10.0.17763)",
+        "x-ms-client-request-id": "bceb8cd493c80b4778bc5ba3a56f6810",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
@@ -17,15 +17,15 @@
         "Cache-Control": "no-cache",
         "Content-Length": "794",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 23 Jun 2022 05:05:19 GMT",
+        "Date": "Fri, 15 Jul 2022 23:53:42 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "fa463cc8-4ac7-4bf8-953b-23615cfbe8e3",
-        "x-ms-ratelimit-remaining-tenant-reads": "11995",
-        "x-ms-request-id": "fa463cc8-4ac7-4bf8-953b-23615cfbe8e3",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20220623T050519Z:fa463cc8-4ac7-4bf8-953b-23615cfbe8e3"
+        "x-ms-correlation-request-id": "f7aaab70-2665-4464-a8f1-c20a8d2a05e7",
+        "x-ms-ratelimit-remaining-tenant-reads": "11996",
+        "x-ms-request-id": "f7aaab70-2665-4464-a8f1-c20a8d2a05e7",
+        "x-ms-routing-request-id": "WESTUS:20220715T235342Z:f7aaab70-2665-4464-a8f1-c20a8d2a05e7"
       },
       "ResponseBody": {
         "value": [
@@ -65,8 +65,9 @@
     }
   ],
   "Variables": {
-    "RandomSeed": "1204944314",
-    "RESOURCE_MANAGER_URL": "https://management.azure.com/",
+    "AZURE_AUTHORITY_HOST": "https://login.microsoftonline.com",
+    "RandomSeed": "1150348238",
+    "RESOURCE_MANAGER_URL": null,
     "SUBSCRIPTION_ID": "db1ab6f0-4769-4b27-930e-01e2ef9c123c"
   }
 }
