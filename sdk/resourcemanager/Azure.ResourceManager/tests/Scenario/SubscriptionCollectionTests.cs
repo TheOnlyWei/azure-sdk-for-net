@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
-    [ClientTestFixture(true, "2021-04-01", "2019-10-01")]
+    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
     public class SubscriptionCollectionTests : ResourceManagerTestBase
     {
         public SubscriptionCollectionTests(bool isAsync, string apiVersion)
