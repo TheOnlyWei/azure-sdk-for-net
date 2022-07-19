@@ -2,13 +2,15 @@
 using Azure.Core;
 using Azure.Core.TestFramework;
 using NUnit.Framework;
+using Azure.ResourceManager.Resources;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
     public class TenantOperationTests : ResourceManagerTestBase
     {
-        public TenantOperationTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public TenantOperationTests(bool isAsync, string apiVersion)
+            : base(isAsync, TenantResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
