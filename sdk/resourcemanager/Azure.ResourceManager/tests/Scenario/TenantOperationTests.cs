@@ -6,7 +6,7 @@ using Azure.ResourceManager.Resources;
 
 namespace Azure.ResourceManager.Tests
 {
-    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class TenantOperationTests : ResourceManagerTestBase
     {
         public TenantOperationTests(bool isAsync, string apiVersion)
