@@ -2,16 +2,18 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Azure.Core.TestFramework;
+using Azure.ResourceManager.Resources;
 using Azure.ResourceManager.Resources.Models;
 using NUnit.Framework;
 using Azure.Core;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
     public class ResourceGroupBuilderTests : ResourceManagerTestBase
     {
-        public ResourceGroupBuilderTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public ResourceGroupBuilderTests(bool isAsync, string apiVersion)
+            : base(isAsync, ResourceGroupResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
