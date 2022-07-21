@@ -11,13 +11,14 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class PredefinedTagOperationsTests : ResourceManagerTestBase
     {
         private string _tagName;
         private SubscriptionResource _subscription;
 
-        public PredefinedTagOperationsTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public PredefinedTagOperationsTests(bool isAsync, string apiVersion)
+            : base(isAsync, SubscriptionResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
