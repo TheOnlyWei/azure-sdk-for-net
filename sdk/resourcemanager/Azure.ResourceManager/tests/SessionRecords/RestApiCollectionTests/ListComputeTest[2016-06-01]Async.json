@@ -1,51 +1,36 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://management.azure.com/subscriptions/db1ab6f0-4769-4b27-930e-01e2ef9c123c?api-version=2021-01-01",
+      "RequestUri": "https://management.azure.com/subscriptions/db1ab6f0-4769-4b27-930e-01e2ef9c123c?api-version=2016-06-01",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-131885201ec0c5408752b81742a1f209-0523b4653d3f9345-00",
-        "User-Agent": "azsdk-net-ResourceManager/1.1.1-alpha.20220623.1 (.NET Framework 4.8.4510.0; Microsoft Windows 10.0.19044 )",
-        "x-ms-client-request-id": "20b1ab0528029a9cf39416e6e14c53e1",
+        "traceparent": "00-72b37e52467f5a05a704b6f3601e18ce-1dd352cd3b9e0402-00",
+        "User-Agent": "azsdk-net-ResourceManager/1.3.0-alpha.20220720.1 (.NET 6.0.7; Microsoft Windows 10.0.17763)",
+        "x-ms-client-request-id": "4d471c485f64c8efae015ad3efb1460f",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-cache",
-        "Content-Length": "747",
+        "Content-Length": "343",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 23 Jun 2022 05:05:15 GMT",
+        "Date": "Thu, 21 Jul 2022 01:20:50 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "a1bc5162-1a80-44b5-bfaa-153cb2b16022",
-        "x-ms-ratelimit-remaining-subscription-reads": "11937",
-        "x-ms-request-id": "a1bc5162-1a80-44b5-bfaa-153cb2b16022",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20220623T050515Z:a1bc5162-1a80-44b5-bfaa-153cb2b16022"
+        "x-ms-correlation-request-id": "8615cff6-00d1-4ef6-98e6-f19acfc93409",
+        "x-ms-ratelimit-remaining-subscription-reads": "11991",
+        "x-ms-request-id": "8615cff6-00d1-4ef6-98e6-f19acfc93409",
+        "x-ms-routing-request-id": "WESTCENTRALUS:20220721T012050Z:8615cff6-00d1-4ef6-98e6-f19acfc93409"
       },
       "ResponseBody": {
         "id": "/subscriptions/db1ab6f0-4769-4b27-930e-01e2ef9c123c",
         "authorizationSource": "RoleBased",
-        "managedByTenants": [],
-        "tags": {
-          "TagKey-9823": "TagValue-566",
-          "TagKey-3481": "TagValue-320",
-          "TagKey-4926": "TagValue-1187",
-          "TagKey-751": "TagValue-3921",
-          "TagKey-1866": "TagValue-8559",
-          "TagKey-3094": "TagValue-9190",
-          "TagKey-2449": "TagValue-9",
-          "TagKey-8379": "TagValue-164",
-          "TagKey-7470": "TagValue-2205",
-          "TagKey-4236": "TagValue-3698",
-          "TagKey-5316": "TagValue-2725"
-        },
         "subscriptionId": "db1ab6f0-4769-4b27-930e-01e2ef9c123c",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": ".NET Mgmt SDK Test with TTL = 1 Day",
         "state": "Enabled",
         "subscriptionPolicies": {
@@ -61,26 +46,26 @@
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-fded93a51e6ec14786e530df242a1fba-891801dec3d65b4f-00",
-        "User-Agent": "azsdk-net-ResourceManager/1.1.1-alpha.20220623.1 (.NET Framework 4.8.4510.0; Microsoft Windows 10.0.19044 )",
-        "x-ms-client-request-id": "8131eb070c38c46fdbc142bf80494cfb",
+        "traceparent": "00-483dae9c1f0cd281368061485652df84-37137578ebe090ee-00",
+        "User-Agent": "azsdk-net-ResourceManager/1.3.0-alpha.20220720.1 (.NET 6.0.7; Microsoft Windows 10.0.17763)",
+        "x-ms-client-request-id": "f5a87e007b04c9615c389b1113d22f76",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-cache",
-        "Content-Length": "72659",
+        "Content-Length": "73218",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 23 Jun 2022 05:05:15 GMT",
+        "Date": "Thu, 21 Jul 2022 01:20:50 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "4840b256-3271-4c1a-a445-75eae99ceae8",
-        "x-ms-ratelimit-remaining-subscription-reads": "11936",
-        "x-ms-request-id": "4840b256-3271-4c1a-a445-75eae99ceae8",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20220623T050515Z:4840b256-3271-4c1a-a445-75eae99ceae8"
+        "x-ms-correlation-request-id": "0bd9315f-b114-4605-adfa-aa4e404bf08e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11990",
+        "x-ms-request-id": "0bd9315f-b114-4605-adfa-aa4e404bf08e",
+        "x-ms-routing-request-id": "WESTCENTRALUS:20220721T012051Z:0bd9315f-b114-4605-adfa-aa4e404bf08e"
       },
       "ResponseBody": {
         "id": "/subscriptions/db1ab6f0-4769-4b27-930e-01e2ef9c123c/providers/Microsoft.Compute",
@@ -165,6 +150,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -252,6 +238,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -533,6 +520,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -620,6 +608,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -902,6 +891,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -990,6 +980,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1078,6 +1069,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1165,6 +1157,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1254,6 +1247,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1343,6 +1337,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1383,6 +1378,7 @@
             "resourceType": "locations",
             "locations": [],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1447,6 +1443,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1534,6 +1531,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1620,6 +1618,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1697,6 +1696,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1783,6 +1783,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1862,6 +1863,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -1941,6 +1943,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-03",
               "2022-03-01",
               "2022-01-03",
@@ -2030,6 +2033,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2093,6 +2097,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2109,6 +2114,7 @@
             "resourceType": "locations/edgeZones",
             "locations": [],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2159,6 +2165,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2209,6 +2216,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2269,6 +2277,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2328,6 +2337,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2580,6 +2590,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2633,6 +2644,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -2879,6 +2891,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -3170,6 +3183,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -3222,6 +3236,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -3274,6 +3289,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01"
@@ -3322,6 +3338,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-03",
               "2022-03-01",
               "2022-01-03",
@@ -3411,6 +3428,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-03",
               "2022-03-01",
               "2022-01-03",
@@ -3996,6 +4014,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -4261,6 +4280,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -4332,6 +4352,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -4402,6 +4423,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -4457,6 +4479,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -4510,6 +4533,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-07-02",
               "2022-03-02",
               "2021-12-01",
               "2021-08-01",
@@ -5178,6 +5202,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -5342,6 +5367,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -5400,6 +5426,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -5650,6 +5677,7 @@
               "Sweden Central"
             ],
             "apiVersions": [
+              "2022-08-01",
               "2022-03-01",
               "2021-11-01",
               "2021-07-01",
@@ -5865,14 +5893,14 @@
       }
     },
     {
-      "RequestUri": "https://management.azure.com/providers/Microsoft.Compute/operations?api-version=2022-03-01",
+      "RequestUri": "https://management.azure.com/providers/Microsoft.Compute/operations?api-version=2022-08-01",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-fded93a51e6ec14786e530df242a1fba-e4da8151f0ec2a42-00",
-        "User-Agent": "azsdk-net-ResourceManager/1.1.1-alpha.20220623.1 (.NET Framework 4.8.4510.0; Microsoft Windows 10.0.19044 )",
-        "x-ms-client-request-id": "9bfc6aff0717f9c2c02f7e6815272c12",
+        "traceparent": "00-483dae9c1f0cd281368061485652df84-6fbe90fa5fd2cb87-00",
+        "User-Agent": "azsdk-net-ResourceManager/1.3.0-alpha.20220720.1 (.NET 6.0.7; Microsoft Windows 10.0.17763)",
+        "x-ms-client-request-id": "272a47ec8b328c361fc39656e0b803db",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
@@ -5881,7 +5909,7 @@
         "Cache-Control": "no-cache",
         "Content-Length": "183290",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 23 Jun 2022 05:05:15 GMT",
+        "Date": "Thu, 21 Jul 2022 01:20:50 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Server": [
@@ -5890,11 +5918,11 @@
         ],
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-client-request-id": "9bfc6aff0717f9c2c02f7e6815272c12",
-        "x-ms-correlation-request-id": "18baa066-3485-424e-ab6c-3b70e3b68248",
-        "x-ms-ratelimit-remaining-tenant-reads": "11997",
-        "x-ms-request-id": "fbc45e5d-a9e2-4699-beaf-4662981bc719",
-        "x-ms-routing-request-id": "SOUTHEASTASIA:20220623T050516Z:18baa066-3485-424e-ab6c-3b70e3b68248"
+        "x-ms-client-request-id": "272a47ec8b328c361fc39656e0b803db",
+        "x-ms-correlation-request-id": "b774f1b4-a14a-4040-8e25-44fc6382bc97",
+        "x-ms-ratelimit-remaining-tenant-reads": "11995",
+        "x-ms-request-id": "509dbaea-613d-40d9-910f-21c621662d66",
+        "x-ms-routing-request-id": "WESTCENTRALUS:20220721T012051Z:b774f1b4-a14a-4040-8e25-44fc6382bc97"
       },
       "ResponseBody": {
         "value": [
@@ -10962,8 +10990,9 @@
     }
   ],
   "Variables": {
-    "RandomSeed": "1846490544",
-    "RESOURCE_MANAGER_URL": "https://management.azure.com/",
+    "AZURE_AUTHORITY_HOST": "https://login.microsoftonline.com",
+    "RandomSeed": "1072728831",
+    "RESOURCE_MANAGER_URL": null,
     "SUBSCRIPTION_ID": "db1ab6f0-4769-4b27-930e-01e2ef9c123c"
   }
 }

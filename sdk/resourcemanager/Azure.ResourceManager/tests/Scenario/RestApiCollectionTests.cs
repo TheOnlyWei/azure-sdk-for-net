@@ -5,10 +5,11 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class RestApiCollectionTests : ResourceManagerTestBase
     {
-        public RestApiCollectionTests(bool isAsync)
-        : base(isAsync)//, RecordedTestMode.Record)
+        public RestApiCollectionTests(bool isAsync, string apiVersion)
+        : base(isAsync, SubscriptionResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
