@@ -9,10 +9,11 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
     public class ResourceGroupCollectionTests : ResourceManagerTestBase
     {
-        public ResourceGroupCollectionTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public ResourceGroupCollectionTests(bool isAsync, string apiVersion)
+            : base(isAsync, ResourceGroupResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
