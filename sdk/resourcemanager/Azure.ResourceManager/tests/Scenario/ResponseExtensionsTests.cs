@@ -3,13 +3,15 @@ using System.Threading.Tasks;
 using Azure.Core;
 using Azure.Core.TestFramework;
 using NUnit.Framework;
+using Azure.ResourceManager.Resources;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class ResponseExtensionsTests : ResourceManagerTestBase
     {
-        public ResponseExtensionsTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public ResponseExtensionsTests(bool isAsync, string apiVersion)
+            : base(isAsync, SubscriptionResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
