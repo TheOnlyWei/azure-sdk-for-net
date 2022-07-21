@@ -5,10 +5,11 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2020-06-01")]
     public class ResourceProviderOperationsTests : ResourceManagerTestBase
     {
-        public ResourceProviderOperationsTests(bool isAsync)
-         : base(isAsync)//, RecordedTestMode.Record)
+        public ResourceProviderOperationsTests(bool isAsync, string apiVersion)
+         : base(isAsync, ResourceProviderResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
