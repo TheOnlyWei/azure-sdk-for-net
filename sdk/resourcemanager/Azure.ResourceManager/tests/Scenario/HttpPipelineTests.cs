@@ -7,14 +7,15 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     [Parallelizable]
     public class HttpPipelineTests : ResourceManagerTestBase
     {
         private ArmClient _client;
         private string _rgName;
 
-        public HttpPipelineTests(bool isAsync)
-            : base(isAsync) //, RecordedTestMode.Record)
+        public HttpPipelineTests(bool isAsync, string apiVersion)
+            : base(isAsync, SubscriptionResource.ResourceType, apiVersion) //, RecordedTestMode.Record)
         {
         }
 
