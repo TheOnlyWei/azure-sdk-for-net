@@ -7,10 +7,11 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class ArmBuilderTests : ResourceManagerTestBase
     {
-        public ArmBuilderTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public ArmBuilderTests(bool isAsync, string apiVersion)
+            : base(isAsync, SubscriptionResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
