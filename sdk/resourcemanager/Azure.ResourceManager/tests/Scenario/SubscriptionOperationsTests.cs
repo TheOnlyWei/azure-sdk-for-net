@@ -10,9 +10,11 @@ using Azure.Core;
 using Azure.Core.TestFramework;
 using Azure.ResourceManager.Resources;
 using NUnit.Framework;
+using System.Reflection;
 
 namespace Azure.ResourceManager.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2016-06-01")]
     public class SubscriptionOperationsTests : ResourceManagerTestBase
     {
         private string _tagKey;
@@ -20,8 +22,8 @@ namespace Azure.ResourceManager.Tests
         private string _tagValue;
         private string TagValue => _tagValue ??= Recording.GenerateAssetName("TagValue-");
 
-        public SubscriptionOperationsTests(bool isAsync)
-            : base(isAsync)//, RecordedTestMode.Record)
+        public SubscriptionOperationsTests(bool isAsync, string apiVersion)
+            : base(isAsync, SubscriptionResource.ResourceType, apiVersion)//, RecordedTestMode.Record)
         {
         }
 
@@ -138,7 +140,12 @@ namespace Azure.ResourceManager.Tests
             var locations = await subOps.GetLocationsAsync().ToEnumerableAsync();
             Assert.IsTrue(locations.Count != 0);
             var location = locations.First();
-            Assert.IsNotNull(location.Metadata, "Metadata was null");
+            var currentApiVersion = new ApiVersionString(this.ApiVersion);
+            var metadataNotSupportedVersion = new ApiVersionString("2016-06-01");
+            if (currentApiVersion.CompareTo(metadataNotSupportedVersion) > 0)
+            {
+                Assert.IsNotNull(location.Metadata, "Metadata was null");
+            }
             Assert.IsNotNull(location.Id, "Id was null");
             Assert.AreEqual(subOps.Id.SubscriptionId, location.SubscriptionId);
         }
@@ -181,6 +188,7 @@ namespace Azure.ResourceManager.Tests
             //Assert.IsNotNull(testFeature.Data.Type);
         }
 
+        [ServiceVersion(Min="2021-04-01")]
         [RecordedTest]
         public async Task ValidateResourceInRestApi()
         {
