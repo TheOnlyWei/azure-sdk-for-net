@@ -39,6 +39,11 @@ namespace Azure.ResourceManager.Storage.Tests.Helpers
         {
         }
 
+        protected StorageTestBase(bool isAsync, ResourceType resourceType, string apiVersion, RecordedTestMode? mode = null)
+            : base(isAsync, resourceType, apiVersion, mode)
+        {
+        }
+
         public static StorageAccountCreateOrUpdateContent GetDefaultStorageAccountParameters(StorageSku sku = null, StorageKind? kind = null, string location = null, ManagedServiceIdentity identity = null)
         {
             StorageSku skuParameters = sku ?? DefaultSkuNameStandardGRS;
