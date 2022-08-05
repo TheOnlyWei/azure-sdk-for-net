@@ -13,11 +13,13 @@ using NUnit.Framework;
 
 namespace Azure.ResourceManager.Storage.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2019-06-01")]
     public class StorageAccountManagedIdentityTests : StorageTestBase
     {
         private ResourceGroupResource _resourceGroup;
         private const string namePrefix = "teststoragemgmt";
-        public StorageAccountManagedIdentityTests(bool isAsync) : base(isAsync)
+        public StorageAccountManagedIdentityTests(bool isAsync, string apiVersion)
+        : base(isAsync, StorageAccountResource.ResourceType, apiVersion)
         {
         }
         [TearDown]
