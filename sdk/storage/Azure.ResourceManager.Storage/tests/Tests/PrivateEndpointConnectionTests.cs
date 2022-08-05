@@ -13,12 +13,14 @@ using Azure.Core;
 
 namespace Azure.ResourceManager.Storage.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2019-06-01")]
     public class PrivateEndpointConnectionTests : StorageTestBase
     {
         private ResourceGroupResource _resourceGroup;
         private StorageAccountResource _storageAccount;
         private StoragePrivateEndpointConnectionCollection _privateEndpointConnectionCollection { get => _storageAccount.GetStoragePrivateEndpointConnections(); }
-        public PrivateEndpointConnectionTests(bool isAsync) : base(isAsync)
+        public PrivateEndpointConnectionTests(bool isAsync, string apiVersion)
+        : base(isAsync, StoragePrivateEndpointConnectionResource.ResourceType, apiVersion)
         {
         }
 
