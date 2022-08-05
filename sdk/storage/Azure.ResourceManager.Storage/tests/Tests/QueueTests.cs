@@ -9,13 +9,15 @@ using Azure.ResourceManager.Storage.Tests.Helpers;
 
 namespace Azure.ResourceManager.Storage.Tests
 {
+    [ClientTestFixture(true, "2021-04-01", "2019-06-01")]
     public class QueueTests : StorageTestBase
     {
         private ResourceGroupResource _resourceGroup;
         private StorageAccountResource _storageAccount;
         private QueueServiceResource _queueService;
         private StorageQueueCollection _storageQueueCollection;
-        public QueueTests(bool async) : base(async)
+        public QueueTests(bool async, string apiVersion)
+        : base(async, StorageQueueResource.ResourceType, apiVersion)
         {
         }
 
